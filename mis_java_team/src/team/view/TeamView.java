@@ -1,12 +1,10 @@
-package com.mis.team.view;
+package team.view;
 
-import com.mis.team.domain.Employee;
-import com.mis.team.domain.Programmer;
-import com.mis.team.service.NameListService;
-import com.mis.team.service.TeamException;
-import com.mis.team.service.TeamService;
-
-import static com.mis.team.service.Data.EQUIPMENTS;
+import team.domain.Employee;
+import team.domain.Programmer;
+import team.service.NameListService;
+import team.service.TeamException;
+import team.service.TeamService;
 
 public class TeamView {
     private NameListService listSvC = new NameListService();
@@ -18,7 +16,7 @@ public class TeamView {
             if(menu !='1'){
                 listAllEmployees();
             }
-            System.out.println("1-团队列表 2-添加团队成员 3-删除团队成员 4-退出 请选择（1-4）：");
+            System.out.print("1-团队列表 2-添加团队成员 3-删除团队成员 4-退出 请选择（1-4）：");
              menu = TSUtility.readMenuSelection();
             switch (menu){
                 case '1':
@@ -102,5 +100,6 @@ public class TeamView {
     public static void main(String[] args) {
         TeamView view =new TeamView();
         view.enterMainMenu();
+
     }
 }

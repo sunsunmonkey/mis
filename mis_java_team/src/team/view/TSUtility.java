@@ -1,4 +1,4 @@
-package com.mis.team.view;
+package team.view;
 import java.util.*;
 
 public class TSUtility {

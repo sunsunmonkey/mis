@@ -1,4 +1,4 @@
-package com.mis.team.domain;
+package team.domain;
 
 public class PC implements Equipment{
     //    机器名称

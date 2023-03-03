@@ -1,4 +1,4 @@
-package com.mis.team.service;
+package team.service;
 //员工状态
 public class Status {
    private final String NAME;

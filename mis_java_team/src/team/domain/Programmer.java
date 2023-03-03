@@ -1,7 +1,6 @@
-package com.mis.team.domain;
+package team.domain;
 
-import com.mis.team.service.Status;
-import jdk.jshell.Snippet;
+import team.service.Status;
 
 public class Programmer extends Employee{
     private int memberId;

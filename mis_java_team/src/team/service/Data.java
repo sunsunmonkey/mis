@@ -1,4 +1,4 @@
-package com.mis.team.service;
+package team.service;
 
 public class Data {
     public static final int EMPLOYEE=10;

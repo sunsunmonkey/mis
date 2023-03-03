@@ -1,9 +1,9 @@
-package com.mis.team.service;
+package team.service;
 
-import com.mis.team.domain.Architect;
-import com.mis.team.domain.Designer;
-import com.mis.team.domain.Employee;
-import com.mis.team.domain.Programmer;
+import team.domain.Architect;
+import team.domain.Designer;
+import team.domain.Employee;
+import team.domain.Programmer;
 
 public class TeamService {
     private static int counter = 1;

@@ -1,8 +1,9 @@
-package com.mis.team.service;
+package team.service;
 
-import com.mis.team.domain.*;
+import team.domain.PC;
+import team.domain.*;
 
-import static com.mis.team.service.Data.*;
+import static team.service.Data.*;
 
 //负责将Data中的数据封装到Employee[]数组中，同时提供相关操作Employee[]的方法
 public class NameListService {

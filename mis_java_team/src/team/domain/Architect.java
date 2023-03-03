@@ -1,4 +1,4 @@
-package com.mis.team.domain;
+package team.domain;
 
 public class Architect extends Designer{
     private int stock;
@@ -26,4 +26,5 @@ public class Architect extends Designer{
     public String getDetailsForTeam(){
         return getMemberId()+"/"+getId()+"\t"+getName()+"\t"+getAge()+"\t"+getSalary()+"\t架构师\t"+getBonus()+"\t"+getStock();
     }
+
 }

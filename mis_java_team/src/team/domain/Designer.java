@@ -1,4 +1,4 @@
-package com.mis.team.domain;
+package team.domain;
 
 public class Designer extends Programmer{
     private double bonus;
