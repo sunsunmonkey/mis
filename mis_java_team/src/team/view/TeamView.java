@@ -100,6 +100,5 @@ public class TeamView {
     public static void main(String[] args) {
         TeamView view =new TeamView();
         view.enterMainMenu();
-
     }
 }
