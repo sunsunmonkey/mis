@@ -3,13 +3,20 @@ import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 
 public class proxytest {
+    public static void main(String[] args) {
+        Superman superman = new Superman();
+        Human ph = (Human) ProxyFactory.getProxyInstance(superman);
+        ph.eat();
+        ph.say();
+
+    }
 
 }
-interface human{
+interface Human{
     void say();
     void eat();
 }
-class Superman implements human{
+class Superman implements Human{
 
     @Override
     public void say() {
