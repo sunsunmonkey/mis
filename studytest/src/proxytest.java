@@ -1,13 +1,28 @@
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.function.Consumer;
+import java.util.function.Function;
 
 public class proxytest {
     public static void main(String[] args) {
         Superman superman = new Superman();
         Human ph = (Human) ProxyFactory.getProxyInstance(superman);
-        ph.eat();
         ph.say();
+        ph.eat();
+        Function<Object,Object> function = (a)->{
+            System.out.println(a.getClass());
+            System.out.println("函数就是爹");
+            return null;
+        };
+        Consumer<String> s = System.out::println;
+        s.accept("hhh");
+        function.apply(123);
+
+
 
     }
 
